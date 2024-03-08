@@ -12,7 +12,7 @@ const Currency = () => {
   };
 
   return (
-    <div className="alert alert-secondary d-flex  flex-md-row">
+    <div className="alert alert-success d-flex  flex-md-row">
       Currency  
       {
         <select
@@ -21,10 +21,9 @@ const Currency = () => {
           id="Currency"
           onChange={(event) => changeLocation(event.target.value)}
         >
-        
-
+          
+          <option value="£" default>£ Pound</option>
           <option value="$">$ Dollar</option>
-          <option value="£">£ Pound</option>
           <option value="€">€ Euro</option>
           <option value="₹">₹ Ruppee</option>
         </select>
