@@ -12,24 +12,19 @@ const Currency = () => {
   };
 
   return (
-    <div className="alert alert-success d-flex  flex-md-row">
-      Currency  
-      {
         <select
-          className="form-select form-select-sm mx-lg-2  w-75"
+          className="form-select form-select-sm mx-lg-2 w-80 bg-success text-white p-3"
           name="Currency"
           id="Currency"
           onChange={(event) => changeLocation(event.target.value)}
         >
-          
-          <option value="£" default>£ Pound</option>
+          <option selected>Currency (£ Pound)</option>
           <option value="$">$ Dollar</option>
+          <option value="£">£ Pound</option>
           <option value="€">€ Euro</option>
           <option value="₹">₹ Ruppee</option>
         </select>
-      }
-    </div>
-  );
+        )
 };
 
 export default Currency;
