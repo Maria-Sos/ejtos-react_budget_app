@@ -18,7 +18,7 @@ const Currency = () => {
           id="Currency"
           onChange={(event) => changeLocation(event.target.value)}
         >
-          <option selected>Currency (£ Pound)</option>
+          <option defaultValue>Currency (£ Pound)</option>
           <option value="$">$ Dollar</option>
           <option value="£">£ Pound</option>
           <option value="€">€ Euro</option>
